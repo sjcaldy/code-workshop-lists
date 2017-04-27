@@ -24,12 +24,9 @@ def view_list(my_list):
 def display_main_menu(my_list):
     """Displays main options, takes in user input, and calls view or add function."""
 
-    user_options = """
-    \nWould you like to:
-    A. Add a new item
-    B. View list
-    C. Quit the program
-    >>> """
+    prompt = "What would like to do? \nA. Add a new item \nB. View list \nC. Quit the program \n>>>"
+  
+    user_input = raw_input(prompt) 
 
     while True:
         # Collect input and include your if/elif/else statements here.
